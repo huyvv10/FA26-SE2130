@@ -1,7 +1,7 @@
 #include <stdio.h>
 void selectionSortAsc(int a[], int n);
 void selectionSortDesc(int a[], int n);
-void bubbleSortAsc(int a[], int n);
+void bubbleSortAsc(int *a, int n);
 void bubbleSortDesc(int a[], int n);
 void display(int a[], int n);
 int main(){
@@ -24,7 +24,7 @@ int main(){
 }
 
 //Sort in ascending order using Bubble sort algorithm
-void bubbleSortAsc(int a[], int n){
+void bubbleSortAsc(int *a, int n){
 	int i, j;
 	for (i=0; i<n-1; i++)
 		for (j=n-1; j>i; j--)
